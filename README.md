@@ -6,8 +6,6 @@ Python + pandas + scikit-learn and visualized in Power BI. No database — raw C
 in, a clean Excel workbook comes out, and that workbook is the single source
 Power BI reads from.
 
-**[Live Preview Dashboard](https://claude.ai/code/artifact/2bbd994f-825a-4324-8dd7-9cc6a1559240)** · **[Power BI Report](#)**
-
 ---
 
 ## Overview
