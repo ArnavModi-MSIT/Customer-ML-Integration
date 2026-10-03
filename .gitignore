@@ -1,0 +1,87 @@
+# ===== PYTHON =====
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# ===== IDE & EDITORS =====
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+*.sublime-project
+*.sublime-workspace
+
+# ===== DATABASE & CREDENTIALS =====
+.env
+.env.local
+.env.*.local
+credentials.json
+config.ini
+*.pem
+*.key
+database.db
+*.db
+
+# ===== DATA FILES (Local Development) =====
+/data/
+*.csv
+!requirements.txt
+/raw_data/
+/processed_data/
+olist-project.session.sql
+
+# ===== JUPYTER & NOTEBOOKS =====
+.ipynb_checkpoints/
+*.ipynb
+.jupyter/
+
+# ===== OUTPUT FILES (Generated) =====
+*.log
+*.out
+*.pid
+*.seed
+
+# ===== PROJECT SPECIFIC =====
+/venv/
+/.venv
+/__pycache__/
+*.pyc
+.pytest_cache/
+
+# ===== OS SPECIFIC =====
+.DS_Store
+Thumbs.db
+*.lnk
+
+.env
+chroma_db/
+
+# ===== OUTPUT FILES (Generated) =====
+!outputs/*.csv
+outputs/*.joblib
+outputs/ml_customer_clusters.csv
+outputs/rfm_analysis_results.csv

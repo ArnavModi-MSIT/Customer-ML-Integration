@@ -1,0 +1,13 @@
+ml_cluster,Segment,customer_count
+0,At Risk,906
+0,Champions,990
+0,Loyal Customers,144
+0,Need Attention,183
+0,Potential Loyalist,578
+1,At Risk,12256
+1,Champions,5507
+1,Lost,3207
+1,Loyal Customers,7266
+1,Need Attention,36763
+1,New Customers,5866
+1,Potential Loyalist,19692

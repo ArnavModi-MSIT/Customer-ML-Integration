@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Customer segmentation and sales analytics on the Olist Brazilian E-Commerce Dataset. RFM segmentation and revenue/product/geography analytics, built with Python and Excel, visualized in an interactive Power BI dashboard." />
+  <meta name="keywords" content="customer segmentation, RFM analysis, sales analytics, data analytics, Power BI, Excel, pandas" />
+  <meta name="author" content="Arnav Modi" />
+  <meta name="theme-color" content="#ff6b35" />
+
+  <!-- Open Graph Tags -->
+  <meta property="og:title" content="Customer Segmentation Dashboard" />
+  <meta property="og:description" content="RFM customer segmentation and sales analytics platform built with Python, Excel, and Power BI" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://arnavmodi-msit.github.io/Customer-Segmentation-Dashboard/" />
+
+  <title>Customer Segmentation Dashboard | RFM Analysis & Sales Analytics</title>
+
+  <!-- GOOGLE FONT -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css?v=2" />
+
+</head>
+
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <span class="logo-icon">📊</span>
+        <span class="logo-text">Segmentation Dashboard</span>
+      </div>
+      <ul class="nav-menu">
+        <li><a href="#overview" class="nav-link">Overview</a></li>
+        <li><a href="#architecture" class="nav-link">Architecture</a></li>
+        <li><a href="#dashboard" class="nav-link">Dashboard</a></li>
+        <li><a href="https://github.com/ArnavModi-MSIT/-Customer-Segmentation-Dashboard-" target="_blank" class="nav-link">GitHub</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero">
+
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+
+      <span class="badge">
+        Data Analytics • RFM Segmentation • Sales & Retention Analytics
+      </span>
+
+      <h1>
+        Customer Segmentation & Sales Analytics
+      </h1>
+
+      <p>
+        A no-database, no-ML analytics pipeline: raw CSVs cleaned and RFM-scored
+        with Python, exported to Excel, and visualized in an interactive Power BI
+        dashboard across 96K+ customers from the Olist Brazilian E-Commerce Dataset.
+      </p>
+
+      <div class="hero-buttons">
+
+        <a href="#dashboard" class="primary-btn">
+          View Dashboard
+        </a>
+
+        <a
+          href="https://github.com/ArnavModi-MSIT/-Customer-Segmentation-Dashboard-"
+          target="_blank"
+          class="secondary-btn">
+          Explore on GitHub
+        </a>
+
+      </div>
+
+    </div>
+
+  </header>
+
+  <!-- METRICS -->
+
+  <section class="metrics">
+
+    <div class="metric-card">
+      <div class="metric-value">96K+</div>
+      <p>Customers Analyzed</p>
+    </div>
+
+    <div class="metric-card">
+      <div class="metric-value">6.5K</div>
+      <p>Champion Customers</p>
+    </div>
+
+    <div class="metric-card">
+      <div class="metric-value">13.15%</div>
+      <p>Revenue from Champions</p>
+    </div>
+
+    <div class="metric-card">
+      <div class="metric-value">R$7.0M</div>
+      <p>Revenue At Risk</p>
+    </div>
+
+  </section>
+
+  <!-- PROJECT INFO -->
+
+  <section class="project-info" id="overview">
+
+    <div class="card">
+
+      <h2>🎯 Project Overview</h2>
+
+      <p>
+        Recency, Frequency, and Monetary (RFM) analysis &mdash; rule-based
+        scoring, not machine learning &mdash; segments customers into 7 groups
+        for targeted retention. Every metric runs on the true customer identity
+        (<code>customer_unique_id</code>), not the per-order key the raw data
+        exposes by default.
+      </p>
+
+      <div class="segments-list">
+        <h3>Customer Segments</h3>
+        <ul>
+          <li><strong>Champions:</strong> Best customers, highest value</li>
+          <li><strong>Loyal Customers:</strong> Consistent purchasers</li>
+          <li><strong>Potential Loyalist:</strong> High conversion potential</li>
+          <li><strong>Need Attention:</strong> Largest segment by size</li>
+          <li><strong>At Risk:</strong> Elevated recency, previously high value</li>
+          <li><strong>New Customers:</strong> Recent, low frequency</li>
+          <li><strong>Lost:</strong> Inactive for an extended period</li>
+        </ul>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ARCHITECTURE / PIPELINE -->
+
+  <section class="architecture" id="architecture">
+
+    <div class="section-title">
+
+      <span>Technical Approach</span>
+
+      <h2>Architecture & Tech Stack</h2>
+
+      <p class="section-subtitle">
+        How raw data becomes a boardroom-ready dashboard &mdash; no database,
+        with ML customer clustering alongside rule-based RFM.
+      </p>
+
+    </div>
+
+    <div class="pipeline">
+
+      <div class="pipeline-stage">
+        <div class="stage-icon">📄</div>
+        <h3>Raw Data</h3>
+        <p>9 CSVs &mdash; orders, customers, products, reviews, payments, geolocation</p>
+        <div class="stage-tech"><span class="stage-badge">CSV</span></div>
+      </div>
+
+      <div class="pipeline-arrow">→</div>
+
+      <div class="pipeline-stage">
+        <div class="stage-icon">🐍</div>
+        <h3>Python + pandas</h3>
+        <p>Clean, join, and RFM-score every table &mdash; rule-based, not ML</p>
+        <div class="stage-tech">
+          <span class="stage-badge">Python</span>
+          <span class="stage-badge">pandas</span>
+        </div>
+      </div>
+
+      <div class="pipeline-arrow">→</div>
+
+      <div class="pipeline-stage">
+        <div class="stage-icon">📊</div>
+        <h3>Excel Workbook</h3>
+        <p>One multi-sheet file &mdash; stands in for a data warehouse</p>
+        <div class="stage-tech"><span class="stage-badge">openpyxl</span></div>
+      </div>
+
+      <div class="pipeline-arrow">→</div>
+
+      <div class="pipeline-stage">
+        <div class="stage-icon">📈</div>
+        <h3>Power BI</h3>
+        <p>Relationships, DAX measures, a 4-page interactive dashboard</p>
+        <div class="stage-tech">
+          <span class="stage-badge">Power BI</span>
+          <span class="stage-badge">DAX</span>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- INSIGHTS -->
+
+  <section class="insights" id="insights">
+
+    <div class="section-title">
+
+      <span>Business Intelligence</span>
+
+      <h2>Key Business Insights</h2>
+
+    </div>
+
+    <div class="insight-grid">
+
+      <div class="insight-card">
+
+        <div class="icon">📈</div>
+
+        <h3>Revenue Concentration</h3>
+
+        <p>
+          Champions (7% of customers) generate 13.15% of revenue &mdash;
+          a real but modest concentration, not the inflated 80/20-style
+          split a naive analysis can produce when customer identity is
+          computed incorrectly.
+        </p>
+
+      </div>
+
+      <div class="insight-card">
+
+        <div class="icon">💰</div>
+
+        <h3>Revenue at Risk</h3>
+
+        <p>
+          R$7.0M &mdash; 45.6% of total revenue &mdash; sits with customers
+          in the At Risk, Need Attention, or Lost segments. No prediction
+          model involved: this is their own historical spend, grouped by
+          how recently and how often they've bought.
+        </p>
+
+      </div>
+
+      <div class="insight-card">
+
+        <div class="icon">💵</div>
+
+        <h3>Retention ROI</h3>
+
+        <p>
+          Recovering just 20% of the "At Risk" segment's historical spend
+          would add roughly R$641K in revenue &mdash; modeled directly in
+          the dashboard's retention scenarios, transparently and without
+          an ML probability score.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- DASHBOARD -->
+
+  <section class="dashboard" id="dashboard">
+
+    <div class="section-title">
+
+      <span>Analytics Dashboard</span>
+
+      <h2>Interactive Power BI Visualization</h2>
+
+    </div>
+
+    <p style="text-align: center; color: #666; margin-bottom: 30px;">
+      Explore customer segmentation, revenue trends, and retention economics across 4 dashboard pages
+    </p>
+
+    <div class="dashboard-container">
+
+      <iframe
+      title="Customer Segmentation Dashboard"
+      width="100%"
+      height="750"
+      src="https://app.powerbi.com/view?r=eyJrIjoiYjhiYzg2NWEtMjBkMi00Yjk5LTk4MDMtOTRkNGQ3ZjY3OGE0IiwidCI6IjNiMjk5M2Q3LTQ5YmYtNGYyOS1iNzk0LWRkNTcyN2Y0NWVlMiJ9"
+      frameborder="0"
+      allowFullScreen="true">
+    </iframe>
+
+    </div>
+
+  </section>
+
+  <!-- CTA SECTION -->
+
+  <section class="cta-section">
+
+    <div class="cta-content">
+
+      <h2>Ready to Explore?</h2>
+
+      <p>
+        Full code, the Power BI build guide, and detailed docs are on GitHub.
+      </p>
+
+      <div class="cta-buttons">
+
+        <a href="https://github.com/ArnavModi-MSIT/-Customer-Segmentation-Dashboard-" target="_blank" class="primary-btn">
+          View Full Project
+        </a>
+
+        <a href="README.md" target="_blank" class="secondary-btn">
+          Read Documentation
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+
+  <footer class="footer">
+
+    <div class="footer-content">
+
+      <div class="footer-section">
+        <h3>Customer Segmentation Dashboard</h3>
+        <p>Customer analytics platform: RFM segmentation and sales analytics on Excel and Power BI &mdash; with K-means customer clustering and no database.</p>
+      </div>
+
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#overview">Overview</a></li>
+          <li><a href="#architecture">Architecture</a></li>
+          <li><a href="#dashboard">Dashboard</a></li>
+          <li><a href="https://github.com/ArnavModi-MSIT/-Customer-Segmentation-Dashboard-" target="_blank">GitHub</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="README.md" target="_blank">Documentation</a></li>
+          <li><a href="POWER_BI_GUIDE.md" target="_blank">Power BI Build Guide</a></li>
+          <li><a href="https://github.com/ArnavModi-MSIT/-Customer-Segmentation-Dashboard-/issues" target="_blank">Report Issue</a></li>
+          <li><a href="https://github.com/ArnavModi-MSIT" target="_blank">Author</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+  </footer>
+
+  <script>
+    // Smooth scrolling for navigation links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+  </script>
+
+</body>
+
+</html>
